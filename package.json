@@ -1,0 +1,21 @@
+{
+  "name": "vkminiapps-params-checker",
+  "version": "1.0.1",
+  "description": "Функция для проверка параметров запуска VK Mini Apps, использующая код из официальной документации ВКонтакте.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vkminiapps",
+    "vk",
+    "vkminiapps params",
+    "vkma",
+    "vk params checker"
+  ],
+  "author": "Nikita Balin <me@nbalin.dev> (https://nbalin.dev)",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "latest"
+  }
+}
