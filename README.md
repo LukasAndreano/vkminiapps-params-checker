@@ -17,5 +17,5 @@ const isValidParams = check('параметры запуска', 'секретн
 Функция возвращает `true` или `false`.
 ### Пример:
 ```javascript
-const isValidParams = check('vk_access_token_settings=&vk_app_id=7948530&vk_are_notifications_enabled=0&vk_is_app_user=1&vk_is_favorite=0&vk_language=ru&vk_platform=desktop_web&vk_ref=other&vk_ts=1634454189&vk_user_id=172118960&sign=5lVUWU19M_xQpENllCGe2Mi-SGWC8K5i7FdkfHOwggA', 'cBpgoP3d9WggrQ81qtNhw');
+const isValidParams = check('vk_access_token_settings=&vk_app_id=7948530&vk_are_notifications_enabled=0&vk_is_app_user=1&vk_is_favorite=0&vk_language=ru&vk_platform=desktop_web&vk_ref=other&vk_ts=1634454189&vk_user_id=172118960&sign=5lVUWU19M_xQpENllCGe2Mi-SGWC8K5i7FdkfHOwggA', 'cBpgoP3d9WggrQ81qtNhw'); // false
 ```

@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "Функция для проверка параметров запуска VK Mini Apps, использующая код из официальной документации ВКонтакте.",
   "main": "index.js",
+  "repository": "github:LukasAndreano/vkminiapps-params-checker",
+  "homepage": "https://github.com/LukasAndreano/vkminiapps-params-checker",
+  "bugs": "https://github.com/LukasAndreano/vkminiapps-params-checker/issues",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
