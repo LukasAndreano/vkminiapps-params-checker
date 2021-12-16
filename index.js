@@ -30,6 +30,10 @@ module.exports = (params, key) => {
     if (!sign || queryParams.length === 0) {
         return false;
     }
+
+    if (Math.floor(Date.now() / 1000)-7200 > params.split("vk_ts=")[1].split("&")[0])
+        return false
+
     const queryString = queryParams
         .sort((a, b) => a.key.localeCompare(b.key))
         .reduce((acc, { key, value }, idx) => {
