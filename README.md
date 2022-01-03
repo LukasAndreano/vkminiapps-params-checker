@@ -12,9 +12,25 @@ const check = require('vkminiapps-params-checker');
 ```
 Использование:
 ```javascript
-const isValidParams = check('параметры запуска', 'секретный ключ приложения');
+const isValidParams = check('параметры запуска', 'секретный ключ приложения', 'время жизни в секундах');
 ```
 Функция возвращает `true` или `false`.
+
+### Время жизни параметров
+При каждой генерации параметров к ним прикрепляется дата создания: **vk_ts**.   
+
+Изначально параметры запуска будут ***"жить"*** два часа - **7200 секунд**. И Вы
+можете изменить это значения, передав нужное число.
+
+В примере выше мы прокидываем **параметры запуска**, **секретный ключ приложения**, а также ***время жизни***. В качестве последнего Вы можете прокинуть как число, так и **0**.
+
+Если указано 0, то проверка на "**протухшесть**" параметров запука будет отключена.
+```javascript
+const isValidParams = check('', '', 3600) // Параметры запуска будут жить час (3600 секунд)
+````
+```javascript
+const isValidParams = check('', '', 0) // Параметры запуска будут жить вечно, пока не изменится, например, ключ от приложения.
+````
 ### Пример:
 ```javascript
 const isValidParams = check('vk_access_token_settings=&vk_app_id=7948530&vk_are_notifications_enabled=0&vk_is_app_user=1&vk_is_favorite=0&vk_language=ru&vk_platform=desktop_web&vk_ref=other&vk_ts=1634454189&vk_user_id=172118960&sign=5lVUWU19M_xQpENllCGe2Mi-SGWC8K5i7FdkfHOwggA', 'cBpgoP3d9WggrQ81qtNhw'); // false

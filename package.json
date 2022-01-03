@@ -1,6 +1,6 @@
 {
   "name": "vkminiapps-params-checker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Функция для проверка параметров запуска VK Mini Apps, использующая код из официальной документации ВКонтакте.",
   "main": "index.js",
   "repository": "github:LukasAndreano/vkminiapps-params-checker",
