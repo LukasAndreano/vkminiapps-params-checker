@@ -1,6 +1,6 @@
 const crypto = require('crypto')
 
-module.exports = (params, key) => {
+module.exports = (params, key, lifetime = 7200) => {
     let sign;
 
     const queryParams = [];
@@ -31,7 +31,7 @@ module.exports = (params, key) => {
         return false;
     }
 
-    if (Math.floor(Date.now() / 1000)-7200 > params.split("vk_ts=")[1].split("&")[0])
+    if (lifetime !== 0 && Math.floor(Date.now() / 1000)-lifetime > params.split("vk_ts=")[1].split("&")[0])
         return false
 
     const queryString = queryParams
