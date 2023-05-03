@@ -1,0 +1,32 @@
+{
+  "name": "vkminiapps-params-checker",
+  "version": "1.0.9",
+  "description": "Функция для проверка параметров запуска VK Mini Apps, использующая код из официальной документации ВКонтакте.",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "github:LukasAndreano/vkminiapps-params-checker",
+  "homepage": "https://github.com/LukasAndreano/vkminiapps-params-checker",
+  "bugs": "https://github.com/LukasAndreano/vkminiapps-params-checker/issues",
+  "keywords": [
+    "vkminiapps",
+    "vk",
+    "vkminiapps params",
+    "vkma",
+    "vk params checker"
+  ],
+  "author": "Nikita Balin <n.balin@koka.team> (https://koka.team)",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "npm run prettify && tsc --build --clean && tsc",
+    "prettify": "prettier --write .",
+    "release": "npm run build && cp package.json dist && cp README.md dist && npm publish ./dist"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
+}
