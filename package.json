@@ -1,5 +1,5 @@
 {
-	"name": "vkminiapps-params-checker",
+	"name": "@lukasandreano/vkminiapps-params-checker",
 	"version": "1.0.13",
 	"description": "Функция для проверка параметров запуска VK Mini Apps, использующая код из официальной документации ВКонтакте.",
 	"license": "MIT",
@@ -9,6 +9,9 @@
 		"import": "./index.js",
 		"require": "./index.js",
 		"types": "./index.d.ts"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
 	},
 	"repository": {
 		"type": "git",
